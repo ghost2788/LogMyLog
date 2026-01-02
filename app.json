@@ -1,0 +1,51 @@
+{
+  "expo": {
+    "name": "LogMyLog",
+    "slug": "logmylog",
+    "version": "1.0.0",
+    "orientation": "portrait",
+    "icon": "./assets/icon.png",
+    "userInterfaceStyle": "light",
+    "splash": {
+      "image": "./assets/splash.png",
+      "resizeMode": "contain",
+      "backgroundColor": "#ffffff"
+    },
+    "assetBundlePatterns": [
+      "**/*"
+    ],
+    "ios": {
+      "supportsTablet": true,
+      "bundleIdentifier": "com.logmylog.app"
+    },
+    "android": {
+      "adaptiveIcon": {
+        "foregroundImage": "./assets/adaptive-icon.png",
+        "backgroundColor": "#ffffff"
+      },
+      "package": "com.logmylog.app",
+      "permissions": [
+        "NOTIFICATIONS"
+      ]
+    },
+    "web": {
+      "favicon": "./assets/favicon.png"
+    },
+    "plugins": [
+      "expo-dev-client",
+      [
+        "expo-notifications",
+        {
+          "icon": "./assets/notification-icon.png",
+          "color": "#ffffff"
+        }
+      ],
+      "expo-router"
+    ],
+    "scheme": "logmylog",
+    "extra": {
+      "supabaseUrl": "https://mzjbyjvtrkxisvmyzgqp.supabase.co",
+      "supabaseAnonKey": "sb_publishable_pBe5rvNiVvFnvXotB7wz2g_iNpiIjWn"
+    }
+  }
+}
